@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leave Form</title>
+    <style>
+      form {
+        width:400px;
+        margin:auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgb(186, 214, 211);
+      }
+      
+      label, select, input[type="date"], textarea, input[type="file"], input[type="submit"] {
+        margin: 10px;
+        width: 300px;
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        font-size: 16px;
+      }
+      
+      label {
+        font-weight: bold;
+      }
+      
+      select {
+        cursor: pointer;
+      }
+      
+      input[type="submit"] {
+        background-color: #4CAF50;
+        color: rgb(224, 215, 215);
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+
+    <form>
+      <h1>LEAVE Form</h1>
+      <!-- <label for="category">Leave Category:</label>
+      <select id="category" onchange="location=this.value;">
+      <option value="internal.html">Internal Event</option>
+      <option value="external.html">External Event</option> -->
+
+
+      <!-- </select>
+      <input type= button value="Go" onclick="gotoNewPage()"/> -->
+      
+    
+      <label for="organiseinstitute">Organising Institute:</label>
+      <textarea id="organiseinstitute" name="organiseinstitute" rows="1"></textarea>
+
+      <label for="type">Type Event:</label>
+      <select id="type" name="type">
+        <option value="inter">Intercollege Event</option>
+        <option value="State">State Event</option>
+        <option value="National">National Event</option>
+        <option value="InterNational">International Event</option>
+
+      </select>
+      
+      <label for="start-time">Starting Time:</label>
+      <input type="time" id="start-time" name="start-time">
+      <label for="end-time">Ending  Time</label>
+      <input type="time" id="end-time" name="end-time">
+
+      
+      <label for="start-date">Starting Date:</label>
+      <input type="date" id="start-date" name="start-date">
+      
+      <label for="end-date">Ending Date:</label>
+      <input type="date" id="end-date" name="end-date">
+
+      <label for="type">Event Type</label>
+      <select id="type" name="type">
+        <option value="inter">Team Event</option>
+        <option value="State">Individual Event</option>
+
+      </select>
+      
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" rows="5"></textarea>
+      
+      <label for="file-upload">Upload NOC:</label>
+      <input type="file" id="file-upload" name="file-upload">
+      
+      <label for="file-upload">Upload Certificates:</label>
+      <input type="file" id="file-upload" name="file-upload">
+
+      <label for="file-upload">Upload Photographs:</label>
+      <input type="file" id="file-upload" name="file-upload">
+      
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
